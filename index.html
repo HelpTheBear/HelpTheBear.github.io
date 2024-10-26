@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VOTE FOR SWISH | HELP THE BEAR</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+      scroll-behavior: smooth;
+    }
+    ::-webkit-scrollbar {
+      width: 0;
+    }
+    .headertext {
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      text-align: center;
+    }
+    @keyframes first {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes second {
+      0% {
+        opacity: 0;
+      }
+      99% {
+        opacity: 0.01;
+      }
+      100% {
+        opacity: 100%;
+      }
+    }
+    .headertext .button {
+      grid-column: 1;
+      z-index: 100;
+      grid-row: 1;
+      animation: second 2s;
+      margin-top: 52vh;
+    }
+    .headertext a {
+      padding: 9px 20px;
+      width: 5%;
+      z-index: 100;
+      font-weight: 700;
+      border: 2px solid black;
+      text-decoration: none;
+      color: black;
+      transition: 0.2s;
+    }
+    .headertext a:hover {
+      background: black;
+      transition: 0.2s;
+      color: white;
+    }
+    .headertext h2 {
+      margin-top: 30vh;
+      z-index: 100;
+      grid-column: 1;
+      grid-row: 1;
+      animation: first 2s;
+    }
+    .headertext h1 {
+      z-index: 100;
+      grid-column: 1;
+      grid-row: 1;
+      margin-top: 40vh;
+      animation: second 2s;
+    }
+    .headertext img {
+      z-index: 1;
+      grid-column: 1;
+      grid-row: 1;
+      height: 100vh;
+      width: 100%;
+      animation: second 2s;
+    }
+    @media (max-width: 1000px) {
+      .headertext img {
+        margin-top: 30vh;
+        height: auto;
+        transform: scale(2);
+      }
+      .headertext h2 {
+        margin-bottom: 3vh;
+      }
+    }
+    .me {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 100vh;
+      width: 100%;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      width: 88%;
+    }
+    .picture img {
+      height: 70vh;
+    }
+    .metext {
+      text-align: right;
+    }
+    .metext h2 {
+      font-weight: 400;
+      padding-left: 100px;
+    }
+    .metext h1 {
+      padding-bottom: 40px;
+    }
+    .metext a {
+      text-decoration: none;
+      color: black;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+    .metext a:hover {
+      background-color: black;
+      color: white;
+      transition: 0.2s;
+    }
+    .second {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    #second img {
+      margin-top: 3vh;
+      height: 100vh;
+      width: 88vw;
+    }
+    @media (max-width: 1000px) {
+      .container {
+        flex-direction: column;
+        text-align: left;
+        padding-bottom: 30px;
+      }
+      .metext {
+        margin-top: 10px;
+        width: 90vw;
+        text-align: left;
+      }
+      .metext h2 {
+        padding-left: 0;
+      }
+    }
+    .testimonials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+    }
+    .testimonials .row {
+      margin: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      width: 90%;
+    }
+    .testimonial {
+      border-radius: 10px;
+      background-color: rgb(245, 245, 245);
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.146);
+      margin-left: 30px;
+      margin-right: 30px;
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      transition: 0.2s;
+    }
+    .testimonial:hover {
+      background-color: rgb(240, 240, 240);
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    .testimonial img {
+      height: 150px;
+      margin-right: 20px;
+      width: auto;
+    }
+    @media (max-width: 1000px) {
+      body {
+        overflow-x: hidden;
+      }
+      .testimonials {
+        min-height: 250vh;
+      }
+      .testimonials .row {
+        flex-direction: column;
+        margin: 0;
+      }
+      .testimonial {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+      #second img {
+        width: 88%;
+        height: auto;
+      }
+    }
+  </style>
+  <body>
+    <div class="headertext">
+      <img src="./images/headerbg.gif" alt="" />
+      <h2>if you see me in the forest fighting with a bear...</h2>
+      <h1>HELP THE BEAR!!!</h1>
+      <div class="button">
+        <a href="#me" class="button">YEAHHH! (click to scroll)</a>
+      </div>
+    </div>
+
+    <div class="me" id="me">
+      <div class="container">
+        <div class="picture">
+          <img src="./images/me.png" alt="" />
+        </div>
+        <div class="metext">
+          <h1>VOTE SWISH FOR SENATORRR 😩😩</h1>
+          <h2>
+            (for a more serious website,
+            <a href="https://sreshthtiwari.github.io" target="_blank"
+              >click here</a
+            >) <br />
+            <br />
+            Yoooooooooooooooo I hope you're doing awesome!!!! I'm running for
+            General and East Wheelock Senator, and I'd appreciate it if you
+            could vote for me.
+            <br /><br />
+            But why vote for me? That's a great question!! <br />
+            <br />
+            <b>I have some concepts of a plan</b> that will make your time at
+            Dartmouth so much better than it already is!!
+            <br />
+            <br />
+            <a href="#testimonials">Click here</a> to find what others have to
+            say about my candidacy.
+            <br />
+            <br />
+            (vote Swish for senator or double it and pass it to the next person)
+          </h2>
+        </div>
+      </div>
+      <!-- to include: imagine voting for bad website, link to serious website -->
+    </div>
+    <div class="testimonials" id="testimonials">
+      <div class="row">
+        <div class="testimonial">
+          <img src="./images/testimonial1.large" alt="cool guy picture" />
+          <div class="text">
+            <h3 class="quote">
+              "I'm just saying - I've never seen Swish and Batman in the same
+              room"
+            </h3>
+            <p class="person">
+              - Royce Brown, Dartmouth '28, extremely cool guy
+            </p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <img src="./images/testimonial2.webp" alt="cool guy picture" />
+          <div class="text">
+            <h3 class="quote">
+              "You have gyattto vote Swish for Senatorrrr!!!"
+            </h3>
+            <p class="person">- Derrick White, probably</p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <img src="./images/testimonial4.webp  " alt="cool guy picture" />
+          <div class="text">
+            <h3 class="quote">
+              "We will not let Swish lose this race - that's not who we are."
+            </h3>
+            <p class="person">- Gregg Popovich, also extremely likely</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="testimonial">
+          <img src="./images/testimonial1.large" alt="cool guy picture" />
+          <div class="text">
+            <h3 class="quote">
+              "I'm just saying - I've never seen Swish and Batman in the same
+              room"
+            </h3>
+            <p class="person">- Royce Brown, extremely cool guy</p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <img src="./images/testimonial1.large" alt="cool guy picture" />
+          <div class="text">
+            <h3 class="quote">
+              "I'm just saying - I've never seen Swish and Batman in the same
+              room"
+            </h3>
+            <p class="person">- Royce Brown, extremely cool guy</p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <img src="./images/testimonial1.large" alt="cool guy picture" />
+          <div class="text">
+            <h3 class="quote">
+              "I'm just saying - I've never seen Swish and Batman in the same
+              room"
+            </h3>
+            <p class="person">- Royce Brown, extremely cool guy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="second" id="second">
+      <img src="images/section bg.png" alt="cool picture" />
+      <h1 style="padding: 15px">VOTE SWISH FOR SENATOR</h1>
+    </div>
+  </body>
+</html>
